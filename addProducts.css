@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.product-form{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    padding: 30px 30px 20px 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product-form h4{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.product-form form{
+    margin: 20px;
+}
+
+form .container{
+    display:flex;
+    flex-direction: row;
+}
+
+form .container .input-box{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 15px;
+    align-items: center;
+} 
+
+form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+
+form select {
+    width: 100%;
+    height: 50px;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+
+form input[type="submit"]{
+    height: 50px;
+    margin-top: 10px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #00802b;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+form input[type="submit"]:hover{
+    background: #2c52ed;
+}
+
+form .file-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+form .file-container .file-input{
+    height: 46px;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 758px) {
+    form .container{
+      flex-direction:column; 
+    }
+
+}
+
+.error{
+    display: block;
+	padding: 0px;
+	color: rgb(187, 26, 26);
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+
+
+
+#label-file{
+    padding: 12px 152px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}

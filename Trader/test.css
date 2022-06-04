@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.container{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    padding: 30px 30px 20px 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
+.hp h2{
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 40px;
+}
+.container form{
+    margin: 10px;
+}
+form .error{
+    display: flex;
+    flex-direction: row;
+}
+input[type="file"]{
+    margin-bottom:15% ;
+}
+input[name="pQuantity"]{
+    width: 50%;
+    margin-right: 50%;
+}
+
+
+form .error .input-box{
+    height: 70px; 
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+form input{
+    width: 100%;
+    height: 50px;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+form select{
+    width: 100%;
+    height: 50px;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+.input-box{
+    margin: -5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+form input[type="submit"]{
+    height: 50px;
+    margin-top: 10px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #00802b;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    width: 50%;
+    margin-right: 50%;
+}
+form input[type="submit"]:hover{
+    background: #2c52ed;
+}
+@media only screen and (max-width: 650px) {
+    form .container{
+      flex-direction:column; 
+      width: 100%;
+      margin-top: 0;
+    }
+
+}
+
+.input-box{
+    display: block;
+	padding: 0px;
+	color: rgb(187, 26, 26);
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
